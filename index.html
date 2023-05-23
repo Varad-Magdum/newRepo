@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- getElementByClass(class_name) -->
+    <p class="india" id="hitman">Rohit</p>
+    <p class="india" id="mr360">Surya</p>
+    <p class="aus" id="favaussie">
+        David Warner
+    </p>
+    <p class="aus" id="favaussie">Steve Smith</p>
+    <!-- getElementByTagName(TagName) -->
+    <h1 class="head">varad</h1>
+
+
+    <!-- styling with dom -->
+    <button onclick="changecolor()">Color</button>
+    <!-- qery selectors  // Tagname
+// document.querySelector("p").style.backgroundColor="cyan";
+// // id name=we need to add # before id
+//     document.querySelector("#favaussie").style.backgroundColor = "red";
+// class name=we need to add . before clasas
+    let indianplayers=document.querySelectorAll(".india");
+    for (let i = 0; i < indianplayers.length; i++) {
+   indianplayers[i].style.backgroundColor = "blue";
+
+
+
+    } -->
+    <!-- addEventListener
+     -->
+
+
+</body>
+</html>
+<script>
+
+function changecolor(){
+//    let indianPlayers= document.getElementsByClassName("india");
+
+// //    indianPlayers[0].style.color="blue";
+// //    indianPlayers[1].style.color = "blue";
+//    for (let i=0;i<indianPlayers.length;i++){
+//     indianPlayers[i].style.color = "blue";
+//    }
+
+// // }
+// //     function changecolor() {
+//         let ausPlayers = document.getElementsByClassName("aus");
+
+       
+//         for (let i = 0; i < ausPlayers.length; i++) {
+//             ausPlayers[i].style.color = "yellow";
+//         }
+
+
+//         let heading=document.getElementsByTagName("h1");
+//          for (let i = 0; i < h1.length; i++) {
+//         heading[i].style.color = "yellow";
+//     }
+// Tagname
+// document.querySelector("p").style.backgroundColor="cyan";
+// // id name=we need to add # before id
+//     document.querySelector("#favaussie").style.backgroundColor = "red";
+// class name=we need to add . before clasas
+    let indianplayers=document.querySelectorAll(".india");
+    for (let i = 0; i < indianplayers.length; i++) {
+   indianplayers[i].style.backgroundColor = "blue";
+
+
+
+    }
+
+}
+
+
+</script>

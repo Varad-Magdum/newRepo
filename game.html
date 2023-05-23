@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src=""></script> -->
+</head>
+<body>
+    <h1>guess the number</h1>
+    <h1 id="random"></h1>
+    <input type="number" name="" id="userValue">
+    <button id="btn">submit</button>
+    <!-- <h3 id="result"></h3> -->
+</body>
+</html>
+<script>
+    let x=parseInt(Math.random()  *50);
+    console.log(x);
+    document.querySelector("#btn").addEventListener("click",checkTheValue);
+
+
+    function checkTheValue(){
+        let val=document.querySelector("#userValue").value;
+        console.log(val);
+        if (val>x){
+            document.querySelector("#result").innerHTML="your guess is too high"
+        }
+        else if (val<x){
+            document.querySelector("#result").innerHTML = "your guess is too low"
+        }
+        else{
+            document.querySelector("#result").innerHTML = "your guess is correct"
+        }
+    }
+
+</script>

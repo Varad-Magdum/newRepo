@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="india" id="hitman">Rohit</p>
+    <p class="india" id="mr360">Surya</p>
+    <p class="aus" id="favaussie">
+        David Warner
+    </p>
+    <p class="aus" id="favaussie">Steve Smith</p>
+    <button id="buttton1">click me</button>
+</body>
+</html>
+<script>
+    document.querySelector("button1").addEventListener("click",changecolor)
+    document.querySelector("button1").addEventListener("click", changeBackground)
+    function changeBackground(){
+        let ausPlayers = document.getElementsByClassName("aus");
+
+
+        for (let i = 0; i < ausPlayers.length; i++) {
+            ausPlayers[i].style.color = "yellow";
+        }
+    }
+</script>
